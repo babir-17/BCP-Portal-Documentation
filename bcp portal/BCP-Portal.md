@@ -1,11 +1,14 @@
 <!-- ># **Bcp Portal** # -->
+  >    # <center>***Corporate Portal*** </center>
 ![](https://bcp.mawarid.com.sa/UI/assets/images/mawarid-logo-2.png)
 >## ***Login***
-![n](./BCP%20imgs/Login%20page.png)
+![](./BCP%20imgs/login%20.png)
 
->#### **Login api:**
- - https://bcp.mawarid.com.sa/api/v2/crm/CheckUser?UserName=a.Dev&password=123456&user-id=a.Dev
-- https://bcp.mawarid.com.sa//api/Auth/usertypetoken 
+  - username and password  call check user api .
+  - if user exits call  SendOTP api.
+- get otp  from 
+[ **OTPLogLink**](https://bcp.mawarid.com.sa/logs/SMSLogger20231215.txt) →  ***`"Change corrent date and year in Url:"`*** 
+ - enter OTP it will call validate OTP api then  go to home page.  
 > ### **Application  Login Link & Credentials:**
 
 
@@ -15,7 +18,7 @@
 
 [ **CorporatePlatform**](https://bcp.mawarid.com.sa/UI/#/) 
 
-[ **OTPLogLink**](https://bcp.mawarid.com.sa/logs/SMSLogger20231215.txt) → ***Change corrent date and year in Url***
+
 
    - ### *Register Mobile Number:* ###
     
@@ -29,13 +32,15 @@
     
       ![](./BCP%20imgs/Forgot%20password.png)
 
-   API:
-   https://bcp.mawarid.com.sa/api/v1/security/user/single-user/a.dev?user-id=a.dev
 
+# **TopNav** :
+
+ - Call GetAllAccount get customer and prjoct then automatically bind  default Customer and project 
+ - User can change cutomer and project 
+ - Store in customer and project data in local storage 
+than only work all page based on current Customer and project 
+-open in home page
  
-
->    # <p style="text-align: center;">***Corporate Portal*** </p>
-  [ **Corporate portal api postman collection** ](./bcp_portal.postman_collection.json)
 > ## Menu:
  ![](./BCP%20imgs/menu.png)
    - Dash Board
@@ -46,187 +51,84 @@
    - Time Sheet
    - Security
    - Admin Reports
-># ***Dash Board:*** #
-![](./BCP%20imgs/dash%20board.png)
-  - Dash board in customer contract counds  is  employee list and project details.
-  - contract new labours employee list and project details.
- # Api:
-   - https://bcp.mawarid.com.sa/api/v2/crm/GetDashBoard,
-   - https://bcp.mawarid.com.sa/api/v1/entitytype/setup/86,
-   - https://bcp.mawarid.com.sa/api/v1/entitytype/setup/68.
-># ***Create Request:*** #
-  ![](./BCP%20imgs/Create%20request.png)
- create request in custoomer request and employees request in resiing details create.
-
-  - Return Request in create Process  create Failed to pass professional exams apply process.
-  - Requesting the worker’s resignation and final exit in return request process.
-
-  - Sick leave return/exit and return  in create request.
-  - Internal / external leave process apply in create request.
-  - Assault on the worker / mistreatment of the worker.
-  - Exit and re-entry visa application and 
-Request emergency leave create request.
- 
-   - Admin Request in renew  employee contract and other request types and letter request type for labour .
- - # Api: 
-     https://bcp.mawarid.com.sa/api/v1/ticketmaster/group,
-
-     https://bcp.mawarid.com.sa/api/v1/ticketmaster/group,
-
-     https://bcp.mawarid.com.sa/api/v1/ticketmaster/group,
-
-     https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecord/66,
-
-     https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement,
-
-     https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecord/65,
-
-     https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecord/65,
-
-     https://bcp.mawarid.com.sa/api/v1/entitytype/form/207,
-
-     https://bcp.mawarid.com.sa/api/v1/ticketmaster/subgroup/single/44,
-
-     https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecord/63,
-
-     https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecord/62,
-
-     https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecord/61.
-
-
-
-> # ***Iqama Expiry:*** #
-  - Iqama Expiry employee request details and customer aproval datails.
-  - supervisor aproval and compleated process in Iqama Expiry
-details.   
-  
-
-    NewRequest 01 ⇨ New CustomerApproval 2 ⇨ InProgress SupervisorApproval 3 ⇨ InProgress IqamaRenewal 4 ⇨ InProgress Completed 5 ⇨ Closed
- 
- - # Api: 
-    https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecord/61
-
-
-> # ***Requests:***
-
-   - Admin request  dtailes and Admin Request Approval in request in requset process.
-   - leave request and aproval  and Contract Renewal Request Approval details.
-   - Termination request approval in request page.
    
-  
+># **Dash Board**
+  -  get list from crm/getrequests params: project id and 
+  customer Details. 
+  - data will get it from local stroge list of data.
+
+    # ***ApI:-***
+ >    + https://bcp.mawarid.com.sa/api/v2/crm/GetDashBoard
+ 
+  ![](./BCP%20imgs/dash%20board.png)
       
-      ShowPending ⇨ Draft ⇨ Approved ⇨ Reject  ⇨ ShowAll
+>   # ***Customer Contract Count:***
+   - Get list from crm /  Params: PageNo and page size in get local storage
+   - data will get it from local storage
+     # ***API:-***
 
-   - # Api:
-       https://bcp.mawarid.com.sa/api/v1/entitytype/setup/60,
+     ![](./BCP%20imgs/CustomerContractCount.png)
 
-       https://bcp.mawarid.com.sa/api/v1/entitytype/setup/97,
+       # ***Details:-***
+      - details Attachments button will show based on   condition 
+     - if click details btn details will show in popup  
+      # API 
 
-       https://bcp.mawarid.com.sa/api/v1/entitytype/setup/88, 
+     # ***General Notes:-***
+     - createing notes in we get below fields Title,notes,file.
 
-       https://bcp.mawarid.com.sa/api/v1/entitytype/setup/110,
+     # ***API:-***         
 
-       https://bcp.mawarid.com.sa/api/v1/entitytype/setup/111,
+>   # ***Contract New Labours:-***
+   - Get list from crm /  Params: entity or RemoteEntity  in get local storage data.
+   - data will get it from local storage
+     # ***API:-***
+     https://bcp.mawarid.com.sa/api/v2/crm/GetLaborListPaging?ProjectID
+   ![](./BCP%20imgs/new%20labour%20contract.png)
 
-       https://bcp.mawarid.com.sa/api/v1/entitytype/setup/115,
+     # ***Details:-***
+     - If click details list data  will show in popup in no data found. 
 
-       https://bcp.mawarid.com.sa/api/v1/entitytype/setup/112,
 
-       https://bcp.mawarid.com.sa/api/v1/entitytype/setup/113,
+     # ***General Notes:-***
 
-       https://bcp.mawarid.com.sa/api/v1/entitytype/setup/114.
-  
-> # ***Reports:***
-  - Report in labours and project list  and details
-  - Loan report and aging reports account statement
-and account statement report  list.
-  - all invoices Pending invoices report details
-
-  - # Api:
-      https://bcp.mawarid.com.sa/api/v1/entitytype/setup/68,
-
-      https://bcp.mawarid.com.sa/api/v1/entitytype/setup/86,
-
-      https://bcp.mawarid.com.sa/api/v1/entitytype/setup/89,
-
-      https://bcp.mawarid.com.sa/api/v1/entitytype/setup/90,
-
-      https://bcp.mawarid.com.sa/api/v1/entitytype/setup/91,
-
-      https://bcp.mawarid.com.sa/api/v1/entitytype/setup/119,
-
-      https://bcp.mawarid.com.sa/api/v1/entitytype/setup/67,
-
-      https://bcp.mawarid.com.sa/api/v1/entitytype/setup/73,
-
-      https://bcp.mawarid.com.sa/api/v1/entitytype/setup/78,
-
-      https://bcp.mawarid.com.sa/api/v1/entitytype/setup/79,
-
-      https://bcp.mawarid.com.sa/api/v1/entitytype/setup/119.
-  
-> # ***Time Sheet:*** #
- Time sheet in process  and period  status working period time shedule  employee customer details and list.
+ > # ***Create Request***
+  -  Get list from crm /  Params: request type and  ticket gruop base in get local storage in total data.
+ - data will get it request TypeEn base in data.
+     # ***API:-***
+     - https://bcp.mawarid.com.sa/api/v1/ticketmaster/group?RequesterTypeId
     
-  - # Api:
-     https://bcp.mawarid.com.sa/api/v1/entitytype/setup/78,
 
-     https://bcp.mawarid.com.sa/api/v1/entitytype/setup/83,
-
-
-     
-        
-> # ***Interview Process:*** # 
-  - Interview process  agent interiview and company interview and online shedule selected and rejected.
-  - Customer interview in schedule confermation, interview ,online test ,selected ,rejected and show all details list in Customer interview.
-
-    
-        ShowPending 16 ⇨ Schedule ⇨ Agent Interview ⇨ Company Interview ⇨ Customer Interview ⇨ Online Test  ⇨Schedule  ⇨ Reschedule ⇨Selected  ⇨Rejected ⇨ ShowAll
-  - # Api:
-    https://bcp.mawarid.com.sa/api/v1/entitytype/setup/117,
-
-    https://bcp.mawarid.com.sa/api/v1/entitytype/setup/118.
-  
-> # ***Security:***  #      
--  <span style="color:#000000"> **User** </span>  login in user name , mobile number ,  email , login and logout , costem id and project id details and List.
--  <span style="color:#000000"> **Role Master** </span> customerid ,  rolr id , module id , role description_EN , role description_AR details.
-- <span style="color:#000000"> **User Activity** </span>   user activity  user name , server other detalis in user activity details.
-- # Api:
-    https://bcp.mawarid.com.sa/api/v1/security/user,
-
-    https://bcp.mawarid.com.sa/api/v1/security/rolemaster,
-
-    https://bcp.mawarid.com.sa/api/v1/security/useractivities,
-
-
-> # ***Admin Report:*** #
- - User login report in labours and project list  and details
-  - Loan report and aging reports account statement
-and account statement report  list.
-  - all invoices Pending invoices report details.
-  - admina report list  login report , approved aimeSheet report genarate reports , admin request
-   Contract Renewal Request in atmin reports details. 
-  - # Api:
-     https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecordbylist/98,
-
-     https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecordbylist/99,
-
-     https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecordbylist/100,
-
-     https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecordbylist/101,
-
-     https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecordbylist/102,
-
-     https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecordbylist/103,
-
-     https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecordbylist/104.
-
-     https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecordbylist/105,
-
-     https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecordbylist/106. 
-
-
-
-
+    ![](./BCP%20imgs/Create%20Request%202.png)
+     # ***Details:-***
+     - if create request type in return request process and admin Request data tetails in this page. 
    
- 
+
+    #  ***Return Request Process:-***
+    - Get crm / params get return reason get local storage in  customer-name base in get leave request ,final exit request , retrun request get local storage in get data 
+    # ***API:-***
+    https://bcp.mawarid.com.sa/api/v2/crm/GetReturnReason?customer-name
+
+    ![](./BCP%20imgs/Return%20Request%20Process.png) 
+
+    # ***فشل في إجتياز الاختبارات المهنية***
+    - Get crm in Request / Params get documenttype and show attachment base get local storage in menu or EntityRecId base get data .
+
+    # ***API:-***
+    https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId
+    
+    ![](./BCP%20imgs/1.png)
+    # ***Details:-***
+    -
+      
+
+
+
+
+
+
+
+    
+      
+
+    
