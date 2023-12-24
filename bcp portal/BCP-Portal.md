@@ -1,4 +1,4 @@
-> # <center>**Corporate Portal** </center>
+> # <center>Corporate Portal </center>
 ![](https://bcp.mawarid.com.sa/UI/assets/images/mawarid-logo-2.png)
 >## ***Login***
 
