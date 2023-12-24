@@ -86,7 +86,7 @@ than only work all page based on current Customer and project
   - data will get it from local storage.
   - 
   # ***API:-***
-     https://bcp.mawarid.com.sa/api/v2/crm/GetLaborListPaging?ProjectID
+   https://bcp.mawarid.com.sa/api/v2/crm/GetLaborListPaging?ProjectID
    ![](./BCP%20imgs/new%20labour%20contract.png)
 
   # ***Details:-***
@@ -122,7 +122,7 @@ than only work all page based on current Customer and project
   - Get crm in Request / Params get documenttype and show attachment base get local storage in menu or EntityRecId base get data .
 
   # ***API:-***
-    https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId
+  https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId
     
   ![](./BCP%20imgs/1.png)
 
@@ -141,7 +141,7 @@ than only work all page based on current Customer and project
   - Get crm in Request / Params get documenttype and show attachment base get local storage in menu or EntityRecId base get data .
 
   # ***API:-***
-    https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId
+  https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId
     
   ![](./BCP%20imgs/2.png)
 
@@ -158,7 +158,7 @@ than only work all page based on current Customer and project
  - Get crm in Request / Params get documenttype and show attachment base get local storage in menu or EntityRecId base get data .
 
   # ***API:-***
-    https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId
+  https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId
     
   ![](./BCP%20imgs/3.png)
 
@@ -184,7 +184,7 @@ than only work all page based on current Customer and project
   - __Notes__ search item in customer name or searchterm base get data in notes type.
   - Add time and date in add this data in Leave Start Date , Last Working day ,Required Days and Leave End Date in field in this request.
   
-  - ***API:-** 
+  - ***API:-*** 
   (https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId) 
 
 
@@ -199,7 +199,7 @@ than only work all page based on current Customer and project
   - Employee Id based in get data 
   - __Notes__ search item in customer name or searchterm base get data in notes type.
   
-  - ***API:-** 
+  - ***API:-*** 
   (https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId) 
 
 
@@ -251,7 +251,7 @@ https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecord/63?customer-n
 # ***Notes***
 - Renew contract get data in Customer name based get data in local storage in data.
 -  __Notes__ search item in customer name or searchterm base get data in notes type.
-- ## API 
+-  ***API*** 
     - https://bcp.mawarid.com.sa/api/v1/entitytype/cannedresponsebyshortcode?searchterm
 - Renew contract in renew employee or customer details and period and other details.
 
@@ -264,7 +264,7 @@ https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecord/63?customer-n
  ![](./BCP%20imgs/1.3.png)
  # ***Notes:-***
 -  __Notes__ search item in customer name or searchterm base get data in notes type.
-- ## API 
+- ## ***API*** 
     - https://bcp.mawarid.com.sa/api/v1/entitytype/cannedresponsebyshortcode?searchterm
 - Admin request in renew employee id or customer id details and request type language and other details.
 
