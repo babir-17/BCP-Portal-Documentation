@@ -149,7 +149,7 @@ than only work all page based on current Customer and project
   - Employee Id based in get data .
   - __Notes__ search item in customer name or searchterm base get data in notes type.
   - 
-  - ***API:-** (https://bcp.mawarid.com.sa/api/v1/entitytype/cannedresponsebyshortcode?searchterm=&customer-name) 
+  - ***API:-*** (https://bcp.mawarid.com.sa/api/v1/entitytype/cannedresponsebyshortcode?searchterm=&customer-name) 
 
 # ***إجازة مرضية مرتجع / خروج وعودة***
 
