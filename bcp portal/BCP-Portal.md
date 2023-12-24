@@ -32,7 +32,7 @@
       ![](./BCP%20imgs/Forgot%20password.png)
 
 
-# **TopNav** :
+# ***TopNav*** :
 
  - Call GetAllAccount get customer and prjoct then automatically bind  default Customer and project 
  - User can change cutomer and project 
@@ -40,7 +40,7 @@
 than only work all page based on current Customer and project 
 -open in home page
  
-> ## Menu:
+> ## ***Menu:***
  ![](./BCP%20imgs/menu.png)
    - Dash Board
    - Create Request
@@ -51,7 +51,7 @@ than only work all page based on current Customer and project
    - Security
    - Admin Reports
    
-># **Dash Board**
+># ***Dash Board***
   -  get list from crm/getrequests params: project id and 
   customer Details. 
   - data will get it from local stroge list of data.
@@ -71,7 +71,7 @@ than only work all page based on current Customer and project
   # ***Details:-***
   - details Attachments button will show based on   condition 
   - if click details btn details will show in popup  
- # API 
+ # ***API***
 
   # ***General Notes:-***
   - createing notes in we get below fields Title,notes,file.
@@ -103,28 +103,42 @@ than only work all page based on current Customer and project
   - if create request type in return request process and admin Request data tetails in this page. 
    
 
-  #  ***Return Request Process:-***
+>  #  ***Return Request Process:-***
   - Get crm / params get return reason get local storage in  customer-name base in get leave request ,final exit request , retrun request get local storage in get data 
   # ***API:-***
     https://bcp.mawarid.com.sa/api/v2/crm/GetReturnReason?customer-name
 
-    ![](./BCP%20imgs/Return%20Request%20Process.png) 
+  ![](./BCP%20imgs/Return%20Request%20Process.png) 
 
-  # ***فشل في إجتياز الاختبارات المهنية***
+> # ***فشل في إجتياز الاختبارات المهنية***
   - Get crm in Request / Params get documenttype and show attachment base get local storage in menu or EntityRecId base get data .
 
   # ***API:-***
     https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId
     
-    ![](./BCP%20imgs/1.png)
+  ![](./BCP%20imgs/1.png)
    # ***Details:-***
   - File attachment types Evidence Attachment , Clearance Attachment and EndOfContractAttachment in file attachment.
   - Employee Id based in get data .
   - __Notes__ search item in customer name or searchterm base get data in notes type.
-  - **API:-** (https://bcp.mawarid.com.sa/api/v1/entitytype/cannedresponsebyshortcode?searchterm=&customer-name) 
-  - #
-  طلب إستقالة العامل وخروج نهائى
-      
+  - ***API:-*** (https://bcp.mawarid.com.sa/api/v1/entitytype/cannedresponsebyshortcode?searchterm=&customer-name) 
+
+
+
+> # ***طلب إستقالة العامل وخروج نهائى***
+  - Get crm in Request / Params get documenttype and show attachment base get local storage in menu or EntityRecId base get data .
+
+  # ***API:-***
+    https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId
+    
+  ![](./BCP%20imgs/2.png)
+   # ***Details:-***
+  - File attachment types Evidence Attachment , Clearance Attachment and EndOfContractAttachment in file attachment.
+  - Employee Id based in get data .
+  - __Notes__ search item in customer name or searchterm base get data in notes type.
+  - ***API:-*** (https://bcp.mawarid.com.sa/api/v1/entitytype/cannedresponsebyshortcode?searchterm=&customer-name) 
+
+# ***إجازة مرضية مرتجع / خروج وعودة***
 
 
 
