@@ -74,7 +74,7 @@ than only work all page based on current Customer and project
   # ***Details:-***
   - details Attachments button will show based on   condition 
   - if click details btn details will show in popup  
- # ***API***
+ # ***API:-***
 
   # ***General Notes:-***
   - createing notes in we get below fields Title,notes,file.
@@ -168,7 +168,7 @@ than only work all page based on current Customer and project
   - __Notes__ search item in customer name or searchterm base get data in notes type.
   - Add time and date in add this data in Leave Start Date , Last Working day ,Required Days and Leave End Date in field in this request.
   
-  - ***API:-** 
+   ## ***API:-*** 
   (https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId) 
 
 
@@ -184,7 +184,7 @@ than only work all page based on current Customer and project
   - __Notes__ search item in customer name or searchterm base get data in notes type.
   - Add time and date in add this data in Leave Start Date , Last Working day ,Required Days and Leave End Date in field in this request.
   
-  - ***API:-*** 
+  - ## ***API:-*** 
   (https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId) 
 
 
@@ -199,7 +199,7 @@ than only work all page based on current Customer and project
   - Employee Id based in get data 
   - __Notes__ search item in customer name or searchterm base get data in notes type.
   
-  - ***API:-*** 
+  - ## ***API:-*** 
   (https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId) 
 
 
@@ -243,7 +243,7 @@ than only work all page based on current Customer and project
 #  ***Renew Contract***
 - get list from crm / get requests Params: activation recordor or customer name. 
 - data will get it from local stroge 
-  - ***API:-***
+  ## ***API:-***
 https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecord/63?customer-name
 
 ![](./BCP%20imgs/1.2.png)
@@ -258,15 +258,67 @@ https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecord/63?customer-n
 # ***Admin Request***
 - Admin request get list from crm / get requests Params: activationrecordor or customer name. 
 - data will get it from local stroge 
-  - ***API:-***
- https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId
+   # ***API:-***
+   https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId
 
  ![](./BCP%20imgs/1.3.png)
  # ***Notes:-***
 -  __Notes__ search item in customer name or searchterm base get data in notes type.
-- ## ***API*** 
+  ## ***API:-*** 
     - https://bcp.mawarid.com.sa/api/v1/entitytype/cannedresponsebyshortcode?searchterm
 - Admin request in renew employee id or customer id details and request type language and other details.
+  
+# ***Letter Request***
+ - letter  request in  get list form crm / get request params : letter type or customer type getdata in local storage.
+ - data will get in form in letter request type customer id base in get it from local storage .
+ ## ***API:-***
+    https://bcp.mawarid.com.sa/api/v2/crm/GetLetterTypes?customer-name
+![](./BCP%20imgs/1.4.png)
 
+# Notes:-
+  -  __Notes__ search item in customer name or searchterm base get data in notes type.
+  ## ***API:-*** 
+   https://bcp.mawarid.com.sa/api/v1/entitytype/cannedresponsebyshortcode?searchterm
+
+> # ***Iqama Expiry***
+ - Iqama Expiry get in EntityTypeRecId based get it local storage in get data.
+ - 
+# ***API:-*** 
+https://bcp.mawarid.com.sa/api/v1/entitytype/dynamic/get/?entityTypeRecId
+
+![](./BCP%20imgs/Iqama%20Expiry.png)
+
+# ***Notes***:-
+  - Iqama exoiry get entityTypeRecId based in EmployeeID , CustomerId , ProjectID	,Name	, Iqama ,Subject	,IqamaExpiryDate , Description , IqamaPeriod	, Issued Date  ,RenewalStatus	and  Renewal Count.
+  # ***Workflow Details:-*** 
+- NewRequest `01 - New` ➠ CustomerApproval `02 - InProgress` ➠SupervisorApproval `03 - InProgress` ➠ IqamaRenewal `04 - InProgress `➠ Completed `05 - Closed`
+
+> # ***Requests***
+
+ ># ***Admin Requests***
+   - get list from crm/GetRequests Params: ProjectID .
+   -  data will get it from local stroge
+
+  # ***API:-*** 
+  https://bcp.mawarid.com.sa/api/v2/crm/GetRequests?ProjectID
+
+  # ***details*** 
+  - details button will show based on condition 
+  - if click details btn details will show in popup  
+  
+  # ***API*** 
+   api/v2/crm/GetRequestByID?RequestID=e42c483f-529e-ee11-be37-0022489a5861
+
+  # ***General Notes*** 
+  -  createing notes in we get below fields Title,notes,file .
+  
+
+
+
+
+
+
+
+ 
 
     
