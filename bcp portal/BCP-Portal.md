@@ -1,4 +1,4 @@
-> # <center>Corporate Portal </center>
+> # <center>___Corporate Portal___ </center>
 ![](https://bcp.mawarid.com.sa/UI/assets/images/mawarid-logo-2.png)
 >## ***Login***
 
@@ -59,7 +59,7 @@ than only work all page based on current Customer and project
   - data will get it from local stroge list of data.
 
   # ***ApI:-***
- >     https://bcp.mawarid.com.sa/api/v2/crm/GetDashBoard
+   https://bcp.mawarid.com.sa/api/v2/crm/GetDashBoard
  
   ![](./BCP%20imgs/dash%20board.png)
       
@@ -100,13 +100,13 @@ than only work all page based on current Customer and project
   - data will get it request TypeEn base in data.
 # ***API:-***
 
-  - https://bcp.mawarid.com.sa/api/v1/ticketmaster/group?RequesterTypeId
+   https://bcp.mawarid.com.sa/api/v1/ticketmaster/group?RequesterTypeId
     
 
  ![](./BCP%20imgs/Create%20Request%202.png)
     
   # ***Details:-***
-  - if create request type in return request process and admin Request data tetails in this page. 
+  - if create request type in return request process and admin Request data details in this page. 
    
 
 >  #  ***Return Request Process:-***
@@ -132,7 +132,8 @@ than only work all page based on current Customer and project
   - 
   - __Notes__ search item in customer name or searchterm base get data in notes type.
   - 
-  - ***API:-*** (https://bcp.mawarid.com.sa/api/v1/entitytype/cannedresponsebyshortcode?searchterm=&customer-name) 
+  - ***API:-*** 
+  (https://bcp.mawarid.com.sa/api/v1/entitytype/cannedresponsebyshortcode?searchterm=&customer-name) 
 
 
 
@@ -149,8 +150,123 @@ than only work all page based on current Customer and project
   - Employee Id based in get data .
   - __Notes__ search item in customer name or searchterm base get data in notes type.
   - 
-  - ***API:-*** (https://bcp.mawarid.com.sa/api/v1/entitytype/cannedresponsebyshortcode?searchterm=&customer-name) 
+  - ***API:-** 
+  (https://bcp.mawarid.com.sa/api/v1/entitytype/cannedresponsebyshortcode?searchterm=&customer-name) 
 
 # ***إجازة مرضية مرتجع / خروج وعودة***
+
+ - Get crm in Request / Params get documenttype and show attachment base get local storage in menu or EntityRecId base get data .
+
+  # ***API:-***
+    https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId
+    
+  ![](./BCP%20imgs/3.png)
+
+   # ***Details:-***
+  - File attachment types Evidence Attachment , Clearance Attachment and EndOfContractAttachment in file attachment.
+  - Employee Id based in get data .
+  - __Notes__ search item in customer name or searchterm base get data in notes type.
+  - Add time and date in add this data in Leave Start Date , Last Working day ,Required Days and Leave End Date in field in this request.
+  
+  - ***API:-** 
+  (https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId) 
+
+
+# ***إجازة داخلية / خارجية***
+
+  https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId
+    
+  ![](./BCP%20imgs/4.png)
+
+   # ***Details:-***
+  - File attachment types Evidence Attachment , Clearance Attachment and EndOfContractAttachment in file attachment.
+  - Employee Id based in get data .
+  - __Notes__ search item in customer name or searchterm base get data in notes type.
+  - Add time and date in add this data in Leave Start Date , Last Working day ,Required Days and Leave End Date in field in this request.
+  
+  - ***API:-** 
+  (https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId) 
+
+
+# ***الإعتداء على العامل / سوء التعامل مع العامل***
+
+  https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId
+    
+  ![](./BCP%20imgs/5.png)
+
+   # ***Details:-***
+  - File attachment types Evidence Attachment , Clearance Attachment and EndOfContractAttachment in file attachment.
+  - Employee Id based in get data 
+  - __Notes__ search item in customer name or searchterm base get data in notes type.
+  
+  - ***API:-** 
+  (https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId) 
+
+
+> # ***طلب تأشيرة خروج و عودة*** 
+
+  https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId
+    
+  ![](./BCP%20imgs/6.png)
+
+   # ***Details:-***
+  - File attachment types Evidence Attachment , Clearance Attachment and EndOfContractAttachment in file attachment.
+  - Employee Id based in get data .
+  
+
+  - Add time and date in add this data in Leave Start Date , Last Working day ,Required Days and Leave End Date in field in this request.
+  -  __Remarks__ search item in customer name or searchterm base get data in notes type.
+  
+     - ***API:-*** (https://bcp.mawarid.com.sa/api/v1/entitytype/cannedresponsebyshortcode?searchterm=&customer-name) 
+
+> # ***طلب أجازة طارئة***
+  https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId
+    
+  ![](./BCP%20imgs/7.png)
+
+   # ***Details:-***
+  - File attachment types evidence attachment , clearance attachment and end Of contract attachment in file attachment.
+  - Employee Id based in get data .
+  
+
+  - Add time and date in add this data in Leave Start Date , Last Working day ,Required Days and Leave End Date in field in this request.
+  -  __Remarks__ search item in customer name or searchterm base get data in notes type.
+  
+     - ***API:-*** (https://bcp.mawarid.com.sa/api/v1/entitytype/cannedresponsebyshortcode?searchterm=&customer-name) 
+
+># ***Admin Request***
+- Admin request in get local storage get sub group or customer name Id put get admin request in data.
+## ***API:-***
+   https://bcp.mawarid.com.sa/api/v1/ticketmaster/subgroup/single/44?customer-name
+   ![](./BCP%20imgs/1.1.png)
+
+#  ***Renew Contract***
+- get list from crm / get requests Params: activation recordor or customer name. 
+- data will get it from local stroge 
+  - ***API:-***
+https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecord/63?customer-name
+
+![](./BCP%20imgs/1.2.png)
+
+# ***Notes***
+- Renew contract get data in Customer name based get data in local storage in data.
+-  __Notes__ search item in customer name or searchterm base get data in notes type.
+- ## API 
+    - https://bcp.mawarid.com.sa/api/v1/entitytype/cannedresponsebyshortcode?searchterm
+- Renew contract in renew employee or customer details and period and other details.
+
+# ***Admin Request***
+- Admin request get list from crm / get requests Params: activationrecordor or customer name. 
+- data will get it from local stroge 
+  - ***API:-***
+ https://bcp.mawarid.com.sa/api/v1/security/documenttype/showattachement?MenuOrEntityRecId
+
+ ![](./BCP%20imgs/1.3.png)
+ # ***Notes:-***
+-  __Notes__ search item in customer name or searchterm base get data in notes type.
+- ## API 
+    - https://bcp.mawarid.com.sa/api/v1/entitytype/cannedresponsebyshortcode?searchterm
+- Admin request in renew employee id or customer id details and request type language and other details.
+
 
     
