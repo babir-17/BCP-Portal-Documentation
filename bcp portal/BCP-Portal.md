@@ -20,7 +20,7 @@
 
 
 
-   ### *Register Mobile Number:* ###
+### *Register Mobile Number:* ###
     
   ![](./BCP%20imgs/Register%20mobile%20number.png)
   
