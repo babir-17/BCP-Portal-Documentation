@@ -20,17 +20,24 @@
 
 
 
-  - ### *Register Mobile Number:* ###
+   ### *Register Mobile Number:* ###
     
-      ![](./BCP%20imgs/Register%20mobile%20number.png)
+  ![](./BCP%20imgs/Register%20mobile%20number.png)
+  
+  - Register mobile number in user name created.
+  - login page along with a username, you'll typically need to integrate a system that generates and validates OTPs. 
+  - OTPs can be sent via text message to the user's registered mobile number. The user can then enter the OTP into the website to verify their identity.
+  - this user login to otp page in register mobile number.
 
-  - ### *Update password Number:* ###
+   ### *Update password Number:* ###
     
-      ![](./BCP%20imgs/Update%20mobile%20number.png)
+  ![](./BCP%20imgs/Update%20mobile%20number.png)
 
-  - ### *Forgot Password:* ###
+   ### *Forgot Password:* ###
     
-      ![](./BCP%20imgs/Forgot%20password.png)
+   ![](./BCP%20imgs/Forgot%20password.png)
+
+   -
 
 
 # ***TopNav*** :
@@ -589,7 +596,7 @@ https://bcp.mawarid.com.sa/api/v1/erp/GetTimeSheetTableList?_projId
    -  get list from crm / getEmployeeLoanDetailsList Params: _projId based  get from   local storage data  .
 -  data will get it from local stroge.
   
-  # ***API***
+# ***API***
 https://bcp.mawarid.com.sa/api/v1/erp/GetTimeSheetTableList?_projId
 
 ![](./BCP%20imgs/Loan%20Report.png)
@@ -698,7 +705,7 @@ https://bcp.mawarid.com.sa/api/v1/erp/getCustStatement?_custaccount=CBN0002248&c
 # ***General Notes*** 
   -  createing notes in we get below fields Title , notes salary details and file details.
 
-># ***Aging Report List:-***
+># ***Aging Report List:-*** 
 
  -  get list from crm / entitytyperulesdata Params: byformrecid or EntityTypeRecId based  get from   local storage data  .
 -  data will get it from local stroge.
@@ -717,14 +724,181 @@ https://bcp.mawarid.com.sa/api/v1/entitytype/rulesdata/byformrecid?EntityTypeRec
 # ***General Notes*** 
   -  createing notes in we get below fields Title , notes salary details and file details.
 
+># ***TimeSheet:-***
 
+ -  get list from crm / GetTimeSheetTableList Params: _projId based & _timesheetPeriod & page & customer-name  get from   local storage data  .
+-  data will get it from local stroge.
+  
+  # ***API***
+https://bcp.mawarid.com.sa/api/v1/erp/GetTimeSheetTableList?_projId=BR0002204&_timesheetPeriod=&$page=1&$size=10&customer-name
 
+![](./BCP%20imgs/aging%20report%20list%202.png)
 
-
-
-
-
-
- 
-
+# ***details***
+  - Rationalizes engineering work data, enabling project leaders, accounting and the engineering manager to understand the engineering costing and key metrics.
+  -  button types will show based on condition 
+  - if click details btn details will show in popup .
+  - 
     
+# ***General Notes*** 
+  -  createing notes in we get below fields
+
+># ***Time Sheet Approve:-***
+
+ -  get list from crm / getPayrollAccountantDetails Params: _projId based & _timesheetPeriod & page & customer-name  get from   local storage data  .
+-  data will get it from local stroge.
+  
+  # ***API***
+https://bcp.mawarid.com.sa/api/v1/erp/getPayrollAccountantDetails?_customerAccount=CBN0002248&_projId=BR0002204&customer-name
+
+
+![](./BCP%20imgs/aging%20report%20list%202.png)
+
+# ***details***
+  - A timesheet is a sheet that details information about the working hour or logged time over a specific period.
+  -  Timesheets are standard tools employees use to record and track their working hours. They're also used to bill clients for the time spent on a project. 
+  -  button types will show based on condition 
+  - if click details btn details will show in popup .
+  - 
+    
+# ***General Notes*** 
+  -  createing notes in we get below fields
+
+
+># ***Interview Process:-***
+
+ -  get list from crm / get Params: entityTypeRecId & CustomerId & page and customer-name get from   local storage data  .
+-  data will get it from local stroge.
+  
+  # ***API***
+https://portal.mawarid.com.sa/SystemApi/api/v1/public/dynamic/get/?entityTypeRecId=167&ustomerIdcustomer-name
+
+
+![](./BCP%20imgs/Interview%20Process.png)
+
+# ***details***
+  - The first round is a phone call with the recruiter, followed by a technical interview, a culture fit interview, and a project-based interview.
+  -  Senior developer interview questions also tend to be more complex and focus on problem-solving skills. Technical assessments vary for different roles as well.
+  -  button types will show based on condition 
+  - if click details btn details will show in popup .
+   # Workflow Details:-
+   
+ShowPending  ➠ Schedule ➠ Agent Interview ➠ Company ➠ Interview ➠ Customer Interview ➠ Online Test Schedule ➠ Reschedule ➠ Selected ➠ Rejected ➠ ShowAll
+- Workflow stages get processStageId based get selecte in the stages. 
+## APi:-
+https://portal.mawarid.com.sa/SystemApi/api/v1/public/dynamic/get/?entityTypeRecId=156&CustomerId
+    
+# ***General Notes*** 
+  -  createing notes in we get below fields
+  
+
+># ***Customer Interview***
+
+ -  get list from crm / activationrecordbylist Params: customer-name get from   local storage data  .
+-  data will get it from local stroge.
+  
+  # ***API***
+ https://bcp.mawarid.com.sa/api/v1/entitytype/form/activationrecordbylist/118?customer-name
+
+![](./BCP%20imgs/Interview%20Process.png)
+
+# ***details***
+  - Customer interviews are tools used to gather information on what customers really want and need from a product.
+  -  This data will easily define what the product should encompass and which customer problem it should solve.
+  -   They really cover a lot of the work that has to be done in the research phase
+  -  button types will show based on condition.
+  - if click details btn details will show in popup .
+   # Workflow Details:-
+   
+
+ShowPending ➠ Schedule ➠ Confirmation ➠ Interview ➠ ReSchedule ➠ Online Test ➠ Selected ➠ Rejected ➠ ShowAll
+- Workflow stages get processStageId based get selecte in the stages.
+- 
+## APi:-
+https://portal.mawarid.com.sa/SystemApi/api/v1/public/dynamic/get/?entityTypeRecId=167&CustomerId
+    
+# ***General Notes*** 
+  -  createing notes in we get below fields
+
+># ***Security:-***
+
+># ***User Login:-***
+ -  get list from crm / Getuser  Params: CustomerId and customer-name  get from   local storage data  .
+-  data will get it from local stroge.
+  
+  # ***API***
+https://bcp.mawarid.com.sa/api/v1/security/user?CustomerId=CBN0002248&$page=1&$size=10&customer-name
+
+![](./BCP%20imgs/user%20login.png)
+
+# ***details***
+  - Allows new users to gain access to the Developer Portal via a Self sign-up page. The default sign-up page has a set of mandatory and optional fields where the user can use to provide their details.
+  -  However, there can be cases where Developer Portal owners need to customize the available fields by modifying the available fields or / and adding new fields.
+  -  button types will show based on condition 
+  - if click details btn details will show in popup .
+  - `create` button in user create in project 
+     ### ***API***
+     https://bcp.mawarid.com.sa/api/v1/security/user/deactivate?recid=588061&comments=&customer-name
+  - `Edit` edit details in role master. 
+      ### ***API*** 
+      https://bcp.mawarid.com.sa/api/v1/security/user/single/10?customer-name
+  - `Delete` details in role master data remove detalis.
+     ### ***API*** 
+     https://bcp.mawarid.com.sa/api/v1/security/user/delete/23?customer-name
+    
+# ***General Notes*** 
+  -  createing notes in we get below fields
+
+># ***Role Master:-***
+ -  get list from crm / Getrolemaster  Params: orporatePortal & CustomerId  get from   local storage data  .
+-  data will get it from local stroge.
+  
+  # ***API***
+
+https://bcp.mawarid.com.sa/api/v1/security/rolemaster?ModuleId=CorporatePortal&CustomerId
+
+![](./BCP%20imgs/Role%20master.png)
+
+# ***details***
+  - PI Portal provides predefined roles that you can assign to users and groups defined in an organization. You can also create custom roles as needed. Users or groups who have roles receive all permissions associated with the roles. 
+  -  button types will show based on condition 
+  - if click details btn details will show in popup .
+  - `create` button in user create in project 
+     ### ***API***
+     https://bcp.mawarid.com.sa/api/v1/security/user/deactivate?recid=588061&comments=&customer-name
+  - `Edit` edit details in role master. 
+      ### ***API*** 
+      https://bcp.mawarid.com.sa/api/v1/security/rolemaster/single/10?customer-name
+  - `Delete` details in role master data remove detalis.
+     ### ***API*** 
+     https://bcp.mawarid.com.sa/api/v1/security/rolemaster/delete/23?customer-name
+  
+## ***API:-***
+https://portal.mawarid.com.sa/SystemApi/api/v1/public/dynamic/get/?entityTypeRecId=167&CustomerId
+    
+# ***General Notes*** 
+  -  createing notes in we get below fields
+
+># ***User Activity:-***
+
+ -  get list from crm / Getrolemaster  Params: orporatePortal & CustomerId  get from   local storage data  .
+-  data will get it from local stroge.
+  
+  # ***API***
+
+https://bcp.mawarid.com.sa/api/v1/security/useractivities?$page
+![](./BCP%20imgs/user%20activity.png)
+
+# ***details***
+  - User Activity is all electronic interactions between a User and the Platform, including use of the Company's services and API. 
+  -  button types will show based on condition 
+  - if click details btn details will show in popup .
+  - button `sumbit` and `reset` in select or deselected data sumbit data .
+     ### ***Api*** 
+     https://bcp.mawarid.com.sa/api/v1/security/useractivities?$page
+  - `deactivate` button selected user name select or delected inn user id.
+      ### ***API*** 
+      https://bcp.mawarid.com.sa/api/v1/security/user/deactivate?recid=588061&comments=&customer-name
+    
+# ***General Notes*** 
+  -  createing notes in we get below fields
